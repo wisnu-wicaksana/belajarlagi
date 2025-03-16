@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.separator {
+    border: none;
+    height: 2px;
+    background-color: #ccc; /* Warna garis */
+    margin: 40px 0; /* Jarak atas dan bawah */
+}
+
+
+/* NAVBAR */
+/* Styling dasar navbar */
+#navbar {
+    background-color: #333; /* Warna latar belakang */
+    padding: 10px 20px;
+}
+
+/* Styling container navbar */
+.nav {
+    display: flex;
+    justify-content: space-between; /* Brand di kiri, menu di kanan */
+    align-items: center;
+}
+
+/* Styling ul */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Jarak antar elemen */
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling li */
+.nav ul li {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.nav ul li:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Styling khusus untuk brand agar tetap di pojok kiri */
+.nav ul li:first-child {
+    margin-right: auto; /* Mendorong menu lain ke kanan */
+}
+
+
+/*B2*/
+
+/* Styling section */
+#b2 {
+    display: flex;
+    
+    justify-content: space-between; /* Memisahkan teks & gambar */
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+/* Styling bagian teks (kanan) */
+.kanan {
+    flex: 1; /* Menggunakan 50% dari lebar */
+    text-align: left; /* Rata kiri */
+}
+
+/* Styling judul dan paragraf */
+.kanan h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.kanan p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Styling tombol */
+#button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling bagian gambar (kiri) */
+.kiri {
+    flex: 1; /* Menggunakan 50% dari lebar */
+    display: flex;
+    justify-content: center; /* Posisi tengah */
+}
+
+.kiri img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover; /* Menjaga rasio gambar */
+    border-radius: 10px;
+    background-color: #333;
+}
+
+/* Styling section */
+#biodata {
+    text-align: center;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+/* Grid container */
+.biodata-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+    gap: 20px; /* Jarak antar box */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Styling box */
+.box {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.box:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+/* Styling section */
+#portfolio {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f9fa;
+}
+
+/* Container card */
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Jarak antar card */
+    flex-wrap: wrap; /* Agar responsif di layar kecil */
+}
+
+/* Styling card */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    transition: 0.3s;
+}
+
+/* Efek hover */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Gambar di dalam card */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Judul dan paragraf */
+.card h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Tombol */
+.card button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: #0056b3;
+}
