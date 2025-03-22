@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Belajar React</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const container = document.getElementById('root');
+        const root = ReactDOM.createRoot(container);
+
+        function Header(props) {
+            return <h1>Belajar React dengan {props.name}</h1>;
+        }
+
+        function HomePages() {
+            const mhs = ["Sandika", "Dodoi", "Erik"];
+
+            return (
+                <>
+                    <Header name="Sandika" />
+                    <Header name="GPT" />
+
+                    <ul>
+                        {mhs.map((mhs) => (
+                            <li key={mhs}>{mhs}</li>
+                        ))}
+                    </ul>
+                </>
+            );
+        }
+
+    function Clik() { 
+    const [likes, setLikes] = React.useState(0); 
+
+    function handleClick(type) {
+        if (type === "tambah") {
+            setLikes(prev => prev + 1);
+        } else if (type === "kurang") {
+            setLikes(prev => prev - 1);
+        } else if (type === "reset") {
+            setLikes(0);
+        }
+    }
+
+    return ( 
+        <>
+            <h2>Jumlah Like: {likes}</h2>
+            <button onClick={() => handleClick("tambah")}>Tambah Like</button>
+            <button onClick={() => handleClick("kurang")}>Kurang Like</button>
+            <button onClick={() => handleClick("reset")}>restat</button> 
+        </>
+    );            
+}
+
+
+
+        root.render(
+            <> 
+                <HomePages />
+                <Clik />
+                
+            </>
+        );
+    </script>
+</body>
+</html>
